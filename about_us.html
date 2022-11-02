@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/main.css">
+   <title>Everest</title>
+</head>
+
+<body class="body">
+   <header class="header">
+      <div class="body_header _container">
+         <a href="./index.html"><img class="header_logo" src="./images/Logo_main.png" alt="Main logo"></a>
+         <nav class="header_nav">
+            <a class="header_link" href="./index.html">Головна</a>
+            <a class="header_link" href="./about_us.html">Про нас</a>
+            <div class="dropdown">
+               <a class="header_link dropdown" onclick="dropdownMenu()">Послуги</a>
+               <div class="dropdown_content header_link" id="dropdown">
+                  <a href="./stock_market.html" class="dropdown_content_link">Фондова біржа</a>
+                  <a href="./crypto.html" class="dropdown_content_link">Криптовалюта</a>
+               </div>
+            </div>
+            <a class="header_link" href="./contacts.html">Контакти</a>
+         </nav>
+         <a class="popup_button_link" href="#popup"><button class="header_button white_text">Зворотній
+               зв'язок</button></a>
+         <div class="mobile_menu_group">
+            <a href="#popup" class="phone_link_button">
+               <button class="header_phone_button">
+                  <img src="./images/phone_button.png" alt="menu phone button">
+               </button>
+            </a>
+            <a onclick="mobileMenuToggle()" class="mobile_menu_button">
+               <button id="mobile_menu_button" class="header_menu_button_mobile">
+                  <hr class="header_menu_button_mobile_line">
+                  <hr class="header_menu_button_mobile_line">
+                  <hr class="header_menu_button_mobile_line">
+               </button>
+               <button id="mobile_menu_button_x" class="mobile_menu_button_x">
+               </button>
+            </a>
+         </div>
+      </div>
+   </header>
+   <main>
+      <div class="mobile_menu_popup" id="mobile_menu_popup">
+         <nav class="mobile_menu_popup_nav">
+            <a class="header_link" href="./index.html">Головна</a>
+            <a class="header_link" href="./about_us.html">Про нас</a>
+            <div class="dropdown_footer">
+               <a class="header_link mobile_dropdown_footer" onclick="dropdownMenuMobileFooter()">Послуги</a>
+               <div class="mobile_dropdown_content_footer" id="mobile_dropdown_footer">
+                  <a href="./stock_market.html" class="dropdown_content_link">Фондова біржа</a>
+                  <a href="./crypto.html" class="dropdown_content_link">Криптовалюта</a>
+               </div>
+            </div>
+            <a class="header_link" href="./contacts.html">Контакти</a>
+            <a class="header_link" href="#">Політика конфіденційності</a>
+         </nav>
+         <div class="mobile_popup_links">
+            <a class="footer_link" href="https://t.me/pashkentosik" target="_blank"><img src="./images/twitter_icon.png"
+                  alt="twitter icon"></a>
+            <a class="footer_link" href="https://www.whatsapp.com/" target="_blank"><img src="./images/wats_up_icon.png"
+                  alt="whats up icon"></a>
+         </div>
+      </div>
+      <div class="body_main">
+         <section class="main_banner au_main_banner">
+            <div class="main_container _container">
+               <div class="page_location">
+                  <a href="./index.html" class="page_location_link">Головна</a>
+                  <span class="page_location_arrow"> > </span>
+                  <a href="./about_us.html" class="page_location_link">Про нас</a>
+               </div>
+               <div class="main_banner_content">
+                  <h2 class="main_banner_title">Everest Finance</h2>
+                  <p class="main_banner_text">Добре продуманий функціонал програми дозволяє налаштувати торговельну
+                     систему згідно з Вашими завданнями — зовнішнім виглядом програми, відсортувати та вибрати необхідні
+                     інструменти для торгівлі, зробити оцінку портфеля.</p>
+               </div>
+            </div>
+         </section>
+         <div class="_container">
+            <section class="au_about_us">
+               <div class="about_us_content">
+                  <h3 class="gray_title">Наші переваги - це</h3>
+                  <div class="green_line_group">
+                     <hr class="green_line">
+                     <h4 class="line_title">Ваш легкий старт<br> у світі фінансів</h4>
+                  </div>
+                  <div class="about_us_banner _tablet_invise">
+                     <img class="au_about_us_banner_img" src="./images/main_about_us_img.png" alt="about us image">
+                  </div>
+                  <div class="about_us_text">
+                     <p class="regular_text">Добре продуманий функціонал програми дозволяє налаштувати торговельну
+                        систему згідно з Вашими завданнями — зовнішнім виглядом програми, відсортувати та вибрати
+                        необхідні інструменти для торгівлі, зробити оцінку портфеля.</p>
+                     <p class="regular_text">Програма ІІС діє з початку 2015 року, а на сьогодні фізичними особами вже
+                        відкрито понад 3 мільйони інвестрахунків. При значному обсязі активів на ІІС понад 246 мільярдів
+                        гривень з'являється підстава замислитися над необхідністю відкриття ІІС та вибору надійного
+                        партеру для цього завдання.</p>
+                     <p class="regular_text">При інвестуванні коштів через ІІС ви не просто звільнитеся від сплати ПДФО,
+                        а й зможете претендувати на повернення 13% від сплаченого раніше податку.</p>
+                  </div>
+               </div>
+               <div class="about_us_banner">
+                  <img class="about_us_banner_img" src="./images/about_us_advantage.png" alt="our advantages">
+               </div>
+               <div class="polka_dotted"></div>
+            </section>
+            <section class="au_expirience">
+               <div class="au_expirience_banner">
+                  <span class="au_expirience_banner_img" alt="our experience">
+                     <div class="au_polka_dotted"></div>
+               </div>
+               <div class="au_expirience_content">
+                  <div class="au_expirience_content_text">
+                     <div class="green_line_group">
+                        <hr class="green_line">
+                        <h4 class="line_title">Досвід наших спеціалістів</h4>
+                     </div>
+                     <div class="au_expirience_tablet">
+                        <span class="au_expirience_tablet_img" alt="our expirience peoples">
+                     </div>
+                     <div class="about_us_text">
+                        <p class="regular_text">Добре продуманий функціонал програми дозволяє налаштувати торговельну
+                           систему згідно з Вашими завданнями — зовнішнім виглядом програми, відсортувати та вибрати
+                           необхідні інструменти для торгівлі, зробити оцінку портфеля.</p>
+                        <p class="regular_text">Програма ІІС діє з початку 2015 року, а на сьогодні фізичними особами
+                           вже відкрито понад 3 мільйони інвестрахунків. При значному обсязі активів на ІІС понад 246
+                           мільярдів гривень з'являється підстава замислитися над необхідністю відкриття ІІС та вибору
+                           надійного партеру для цього завдання.</p>
+                     </div>
+                  </div>
+                  <div class="au_green_drops">
+                     <div class="au_green_drops_vertical">
+                        <div class="au_green_drop">
+                           <h5 class="au_green_drop_title">18</h5>
+                           <p class="au_green_drop_text">Років досвіду</p>
+                        </div>
+                        <div class="au_green_drop mobile_hide_drop">
+                           <h5 class="au_green_drop_title">9.8/10</h5>
+                           <p class="au_green_drop_text">Рейтинг довіри</p>
+                        </div>
+                        <div class="au_green_drop_mirror mobile_show_drop">
+                           <h5 class="au_green_drop_title">1500+</h5>
+                           <p class="au_green_drop_text">Років досвіду</p>
+                        </div>
+                     </div>
+                     <div class="au_green_drops_vertical _mirror">
+                        <div class="au_green_drop_mirror mobile_hide_drop">
+                           <h5 class="au_green_drop_title">1500+</h5>
+                           <p class="au_green_drop_text">Років досвіду</p>
+                        </div>
+                        <div class="au_green_drop mobile_show_drop">
+                           <h5 class="au_green_drop_title">9.8/10</h5>
+                           <p class="au_green_drop_text">Рейтинг довіри</p>
+                        </div>
+                        <div class="au_green_drop_mirror">
+                           <h5 class="au_green_drop_title">5000$</h5>
+                           <p class="au_green_drop_text">Середній дохід наших клієнтів через пів року</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+   </main>
+   <footer class="footer_body">
+      <div class="au_footer_wrapper">
+         <div class="_container">
+            <div class="start_make_money">
+               <div class="start_make_money_form">
+                  <div class="au_expirience_content_text">
+                     <div class="green_line_group ">
+                        <hr class="green_line">
+                        <h4 class="line_title">Почніть заробляти вже сьогодні</h4>
+                     </div>
+                     <div class="about_us_text">
+                        <p class="regular_text mobile_form_padding">Залишіть заявку і наш менеджер зв'яжеться з Вами
+                           <br>протягом кількох
+                           годин
+                        </p>
+                        <div class="au_popup_content">
+                           <form class="au_popup_input" action="#popup_success">
+                              <input class="popup_input_field" type="text" placeholder="Ваше ім'я" required>
+                              <input class="popup_input_field" type="email"
+                                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required placeholder="Емейл">
+                              <input class="popup_input_field" type="tel" placeholder="Телефон" required>
+                              <input type="submit" class="popup_input_button" value="Надіслати">
+                           </form>
+                        </div>
+                        <div class="au_green_line_group">
+                           <hr class="au_green_line">
+                           <div class="au_green_line_links_text">
+                              <p class="au_regular_text">Бажаєте зв'язатися з нами раніше, ніж ми Вам
+                                 передзвонимо?<br>Пишіть нам у месенджер. Ми завжди на зв'язку!</p>
+                              <div class="au_green_line_links">
+                                 <a class="footer_link" href="https://t.me/pashkentosik" target="_blank"><img
+                                       src="./images/twitter_icon.png" alt="twitter icon"></a>
+                                 <a class="footer_link" href="https://www.whatsapp.com/" target="_blank"><img
+                                       src="./images/wats_up_icon.png" alt="whats up icon"></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div>
+                  <img class="start_make_money_img" src="./images/start_make_money.png" alt="wallet start make money">
+               </div>
+            </div>
+            <div class="foot_container">
+               <div class="footer_content">
+                  <a href="./index.html"><img class="header_logo" src="./images/Logo_main.png" alt="Main logo"></a>
+                  <nav class="footer_nav">
+                     <a class="header_link" href="./index.html">Головна</a>
+                     <a class="header_link" href="./about_us.html">Про нас</a>
+                     <div class="dropdown_footer">
+                        <a class="header_link dropdown_footer" onclick="dropdownMenuFooter()">Послуги</a>
+                        <div class="dropdown_content_footer" id="dropdown_footer">
+                           <a href="./stock_market.html" class="dropdown_content_link">Фондова біржа</a>
+                           <a href="./crypto.html" class="dropdown_content_link">Криптовалюта</a>
+                        </div>
+                     </div>
+                     <a class="header_link" href="./contacts.html">Контакти</a>
+                     <a class="header_link" href="#">Політика конфіденційності</a>
+                  </nav>
+                  <div class="footer_links">
+                     <a class="footer_link" href="https://t.me/pashkentosik" target="_blank"><img
+                           src="./images/twitter_icon.png" alt="twitter icon"></a>
+                     <a class="footer_link" href="https://www.whatsapp.com/" target="_blank"><img
+                           src="./images/wats_up_icon.png" alt="whats up icon"></a>
+                  </div>
+               </div>
+               <hr class="footer_line">
+               <h6 class="copyright_footer">- <a href="https://www.instagram.com/pashkentik/"
+                     class="footer_copyright">Pasha Prystupa</a> inc.
+                  Всі права захищено 2022 -</h6>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <div id="popup" class="popup">
+      <a class="popup_area" href="#popup_close"></a>
+      <div class="popup_body">
+         <div class="popup_group">
+            <div class="popup_content">
+               <h3 class="popup_title">Зворотній зв'язок</h3>
+               <form class="popup_input" action="#popup_success">
+                  <input class="popup_input_field" type="text" placeholder="Ваше ім'я" required>
+                  <input class="popup_input_field" type="tel" placeholder="Телефон" required>
+                  <input class="popup_input_field" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                     required placeholder="Емейл">
+                  <input type="submit" class="popup_input_button" value="Надіслати">
+               </form>
+            </div>
+            <a href="#popup_close" class="popup_close"><img class="popup_close_img" src="./images/close_btn.png"
+                  alt="close icon"></a>
+         </div>
+      </div>
+   </div>
+   <div id="popup_success" class="popup_success">
+      <a class="popup_area" href="#popup_close"></a>
+      <div class="popup_body_success">
+         <div class="popup_group_success">
+            <div class="popup_content_success">
+               <h3 class="popup_title title_success">Ви успішно надіслали заявку на зворотній дзвінок. Ми з вами
+                  зв'яжемось найближчим часом!</h3>
+            </div>
+            <a href="#popup_close" class="popup_close"><img class="popup_close_img" src="./images/close_btn.png"
+                  alt="close icon"></a>
+         </div>
+      </div>
+   </div>
+   <div id="popup_close" class="popup_close_scroll"></div>
+   <script src="./js/main.js"></script>
+</body>
+
+</html>
