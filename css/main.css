@@ -623,7 +623,21 @@ a {
    display: flex;
    justify-content: space-between;
 }
-
+.scroll_hidden h5, .scroll_hidden p{
+   opacity: 0;
+   filter: blur(4px);
+   transition: all 2s ease-out;
+   
+}
+.scroll_show h5, .scroll_show p{
+   opacity: 1;
+   filter: blur(0);
+   transition: all 2s ease-in;
+   
+}
+.scroll_show p {
+   transition-delay: 0.8s ;
+}
 .line_title {
    font-family: 'Gilroy';
    font-style: normal;
