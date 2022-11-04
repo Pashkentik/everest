@@ -626,17 +626,17 @@ a {
 .scroll_hidden h5, .scroll_hidden p{
    opacity: 0;
    filter: blur(4px);
-   transition: all 2s ease-out;
+   transition: all 1.5s ease-out;
    
 }
 .scroll_show h5, .scroll_show p{
    opacity: 1;
    filter: blur(0);
-   transition: all 2s ease-in;
+   transition: all 1.5s ease-in;
    
 }
 .scroll_show p {
-   transition-delay: 0.8s ;
+   transition-delay: 0.6s ;
 }
 .line_title {
    font-family: 'Gilroy';
