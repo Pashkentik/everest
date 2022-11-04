@@ -1501,7 +1501,7 @@ a {
 .dropdown_content_footer {
    display: none;
    left: -75%;
-   transform: translate(0, -200%);
+   transform: translate(0, -116%);
    position: absolute;
    border-radius: 8px 8px 0px 0px;
    z-index: 10;
@@ -1511,8 +1511,8 @@ a {
 }
 .dropdown_content_footer_contact {
    display: none;
-   left: -75%;
-   transform: translate(0, -200%);
+   left: -95%;
+   transform: translate(0, -116%);
    position: absolute;
    border-radius: 8px 8px 0px 0px;
    z-index: 10;
