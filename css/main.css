@@ -1669,6 +1669,9 @@ a {
    transform: rotate(45deg);
    transition: 0.5s ease-in-out;
 }
+.FAQ_list_item_group_title .FAQ_list_item_close {
+   transition: 0.5s ease-in-out;
+}
 
 .FAQ_show .FAQ_dropdowm_text {
    opacity: 1;
