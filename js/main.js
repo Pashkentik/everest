@@ -1,3 +1,18 @@
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if(entry.isIntersecting) {
+      entry.target.classList.add('scroll_show');
+    } else {
+      entry.target.classList.remove('scroll_show');
+    }
+  });
+});
+
+
+const hiddenElements = document.querySelectorAll('.scroll_hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function dropdownMenu() {
