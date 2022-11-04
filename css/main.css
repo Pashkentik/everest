@@ -1610,9 +1610,6 @@ a {
    text-transform: uppercase;
 }
 
-.FAQ_list_item_group:not(.FAQ_show) .FAQ_dropdowm_text {
-   display: none;
-}
 
 .FAQ_list_item {
    display: flex;
@@ -1648,9 +1645,11 @@ a {
    line-height: 114%;
    letter-spacing: 0.01em;
    color: #1D1B1B;
-   padding: 1em 0;
+   max-height: fit-content;
    opacity: 0;
-   transition: opacity 0.5s linear;
+   max-height: 0;
+   transition: all 1s ;
+   overflow: hidden;
 }
 
 .FAQ_list_item_close {
@@ -1672,9 +1671,12 @@ a {
 .FAQ_list_item_group_title .FAQ_list_item_close {
    transition: 0.5s ease-in-out;
 }
-
 .FAQ_show .FAQ_dropdowm_text {
    opacity: 1;
+   height: fit-content;
+   padding: 1em 0;
+   max-height: 500px;
+   transition: all 1s ease-in;
 }
 
 .contact_container {
