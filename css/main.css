@@ -1590,7 +1590,7 @@ a {
    justify-content: center;
 }
 
-.FAQ_dropdown_body {
+.faq_dropdown_body {
    min-height: 800px;
    width: 100%;
    display: flex;
@@ -1598,7 +1598,7 @@ a {
    align-items: center;
 }
 
-.FAQ_dropdown_content {
+.faq_dropdown_content {
    height: fit-content;
    max-width: 800px;
    width: 100%;
@@ -1607,13 +1607,13 @@ a {
    gap: 80px;
 }
 
-.FAQ_text {
+.faq_text {
    display: flex;
    flex-direction: column;
    align-items: center;
 }
 
-.FAQ_gray_title {
+.faq_gray_title {
    width: fit-content;
    font-weight: 900;
    font-size: 14px;
@@ -1625,12 +1625,12 @@ a {
 }
 
 
-.FAQ_list_item {
+.faq_list_item {
    display: flex;
    flex-direction: column;
 }
 
-.FAQ_list_item_group_title {
+.faq_list_item_group_title {
    display: flex;
    justify-content: space-between;
    cursor: pointer;
@@ -1638,7 +1638,7 @@ a {
    min-height: 32px;
 }
 
-.FAQ_list_item_title {
+.faq_list_item_title {
    font-style: normal;
    font-weight: 600;
    font-size: 17px;
@@ -1648,11 +1648,11 @@ a {
    align-self: center;
 }
 
-.FAQ_show {
+.faq_show {
    display: block;
 }
 
-.FAQ_dropdowm_text {
+.faq_dropdowm_text {
    font-style: normal;
    font-weight: 400;
    font-size: 14px;
@@ -1666,26 +1666,26 @@ a {
    overflow: hidden;
 }
 
-.FAQ_list_item_close {
+.faq_list_item_close {
    height: 1.5em;
    width: 1.5em;
 }
 
-.FAQ_list_line {
+.faq_list_line {
    height: 1px;
    color: #DFDFDF;
    width: 100%;
    opacity: 0.6;
 }
 
-.FAQ_show .FAQ_list_item_group_title .FAQ_list_item_close {
+.faq_show .faq_list_item_group_title .faq_list_item_close {
    transform: rotate(45deg);
    transition: 0.5s ease-in-out;
 }
-.FAQ_list_item_group_title .FAQ_list_item_close {
+.faq_list_item_group_title .faq_list_item_close {
    transition: 0.5s ease-in-out;
 }
-.FAQ_show .FAQ_dropdowm_text {
+.faq_show .faq_dropdowm_text {
    opacity: 1;
    height: fit-content;
    padding: 1em 0;
@@ -2020,7 +2020,7 @@ a {
       line-height: 18px;
    }
 
-   .FAQ_dropdown_body {
+   .faq_dropdown_body {
       min-height: 600px;
       padding-top: 40px;
       padding-bottom: 60px;
@@ -2339,7 +2339,7 @@ a {
       width: 100%;
    }
 
-   .FAQ_dropdown_content {
+   .faq_dropdown_content {
       gap: 50px;
    }
 }
