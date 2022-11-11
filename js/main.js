@@ -58,17 +58,17 @@ class ItcAccordion {
 
   addEventListener() {
     this._el.addEventListener('click', (e) => {
-      const elHeader = e.target.closest('.FAQ_list_item_group_title');
+      const elHeader = e.target.closest('.faq_list_item_group_title');
       if (!elHeader) {
         return;
       }
       if (!this._config.alwaysOpen) {
-        const elOpenItem = this._el.querySelector('.FAQ_show');
+        const elOpenItem = this._el.querySelector('.faq_show');
         if (elOpenItem) {
-          elOpenItem !== elHeader.parentElement ? elOpenItem.classList.toggle('FAQ_show') : null;
+          elOpenItem !== elHeader.parentElement ? elOpenItem.classList.toggle('faq_show') : null;
         }
       }
-      elHeader.parentElement.classList.toggle('FAQ_show');
+      elHeader.parentElement.classList.toggle('faq_show');
     });
   }
 }
