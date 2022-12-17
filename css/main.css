@@ -291,7 +291,7 @@ h6 {
 
 /***************************************************              GENERAL RESET STYLES             ***************************************************/
 ._container {
-   max-width: 1200px;
+   max-width: 1074px;
    margin: 0 auto;
    padding: 0 15px;
    box-sizing: content-box;
@@ -360,8 +360,12 @@ a {
    border: none;
    text-align: center;
    cursor: pointer;
+   border: 1px #01D957 solid;
 }
-
+.popup_input_button:hover {
+   color: #01D957;
+   background-color: #FFFFFF;
+}
 .header_phone_button {
    width: 40px;
    height: 40px;
@@ -395,8 +399,55 @@ a {
 }
 
 .mobile_menu_button {
-   height: fit-content;
-   width: fit-content;
+   border: none;
+   background: #FFFFFF;
+   width: 28px;
+   height: 19px;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   padding: 0;
+   justify-content: center;
+}
+
+.mobile_menu_button span {
+   height: 3px;
+   width: 100%;
+   border-radius: 8px;
+   background-color: #01D957;
+   position: relative;
+}
+.mobile_menu_button span::before {
+   position: absolute;
+   content: '';
+   height: 3px;
+   width: 100%;
+   background-color: #01D957;
+   top: -300%;
+   border-radius: 8px;
+   transition: all 0.5s;
+}
+.mobile_menu_button span::after {
+   position: absolute;
+   content: '';
+   height: 3px;
+   width: 100%;
+   background-color: #01D957;
+   top: 300%;
+   border-radius: 8px;
+   transition: all 0.5s;
+}
+.change_btn span::before {
+   transform: rotate(45deg);
+   top: 0;
+}
+.change_btn span::after {
+   transform: rotate(-45deg);
+   top: 0;
+}
+.change_btn span {
+   background-color: transparent;
+   transition: all 0.2s;
 }
 
 .mobile_menu_group {
@@ -539,8 +590,17 @@ a {
    border: none;
    border-radius: 27px;
    cursor: pointer;
-}
+   border: 1px #01D957 solid;
 
+}
+.main_banner_button:hover {
+   color: #01D957;
+   background-color: #fff;
+}
+.header_button:hover {
+   color: #01D957;
+   background-color: #fff;
+}
 
 .about_us {
    width: 100%;
@@ -1069,6 +1129,7 @@ a {
    color: #FFFFFF;
    width: 100%;
    cursor: pointer;
+   border:  1px solid #01D957;
 }
 
 .popup_input_button_link {
@@ -1136,11 +1197,14 @@ a {
    z-index: 18;
    align-items: center;
    flex-direction: column;
-   display: none;
+   visibility: collapse;
+   opacity: 0;
+   transition: all 0.5s;
 }
 
 .show_menu_popup {
-   display: flex;
+   opacity: 1;
+   visibility: visible;
 }
 
 .hide_three_hr {

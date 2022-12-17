@@ -17,6 +17,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 toggle between hiding and showing the dropdown content */
 function dropdownMenu() {
   document.getElementById("dropdown").classList.toggle("show_dropdown");
+  
 }
 
 // Close the dropdown menu if the user clicks outside of it
@@ -78,6 +79,5 @@ new ItcAccordion('#accordion_1');
 
 function mobileMenuToggle() {
   document.getElementById("mobile_menu_popup").classList.toggle("show_menu_popup");
-  document.getElementById("mobile_menu_button").classList.toggle("hide_three_hr");
-  document.getElementById("mobile_menu_button_x").classList.toggle("show_x");
+  document.getElementById("buttonActive").classList.toggle("change_btn");
 }
